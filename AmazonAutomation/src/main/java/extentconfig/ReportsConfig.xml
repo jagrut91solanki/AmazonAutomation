@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>standard</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>Amazon Automation Report</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>
+			<image id="image-zoom">
+		<![CDATA[	
+		]]>
+			</image>
+
+		</reportName>
+
+		<!-- report headline - displayed at top-nav, after reportHeadline -->
+		<reportHeadline></reportHeadline>
+
+		<!-- global date format override -->
+		<!-- defaults to yyyy-MM-dd -->
+		<dateFormat>yyyy-MM-dd</dateFormat>
+
+		<!-- global time format override -->
+		<!-- defaults to HH:mm:ss -->
+		<timeFormat>HH:mm:ss</timeFormat>
+
+		<!-- custom javascript -->
+		<scripts>
+            <![CDATA[
+    $(document).ready(function() {
+      $("#image-zoom").src("src",src);
+	  $("#image-zoom").append("src",src);
+    });
+  ]]>
+		</scripts>
+
+		<!-- custom styles -->
+		<styles>
+            <![CDATA[
+                 img{ display: block;
+    margin-top: 8px;
+    width: 156px;
+    margin-left: -17px;}
+            ]]>
+		</styles>
+	</configuration>
+</extentreports>
