@@ -25,11 +25,11 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 	public boolean flag;
 
 	public void onFinish(ITestContext arg0) {
-		//System.out.println(arg0 + " =================Test Case Execution Finished ===========================");
+		System.out.println(arg0 + " =================Test Case Execution Finished ===========================");
 	}
 
 	public void onStart(ITestContext arg0) {
-		//System.out.println(arg0 + " =================Test Case Execution Started===========================");
+		System.out.println(arg0 + " =================Test Case Execution Started===========================");
 
 	}
 
@@ -39,7 +39,7 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 	}
 
 	public void onTestFailure(ITestResult arg0) {
-		//System.out.println(arg0 + " =================Test Case Failed===========================");
+		System.out.println(arg0 + " =================Test Case Failed===========================");
 		System.out.println("===========================================================");
 		System.out.println("Test Case Execution Got Failed,Test Name is:\t"+arg0.getName());
 		System.out.println("===========================================================");
