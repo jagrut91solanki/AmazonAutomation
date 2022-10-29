@@ -1,0 +1,7 @@
+{
+	"browser": "chrome",
+	"PROD": "https://www.amazon.in",
+	"STAGE": "https://www.amazon.in",
+	"enviroment": "PROD",
+}
+ 
