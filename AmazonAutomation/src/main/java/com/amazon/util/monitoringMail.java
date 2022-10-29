@@ -47,7 +47,7 @@ public class monitoringMail {
 			Message message = new MimeMessage(session);
 
 			// X-Priority values are generally numbers like 1 (for highest priority), 3
-			// (normal) and 5 (lowest).
+			// (normal) and 5 (lowest)
 			
 			message.addHeader("X-Priority", "1");
 			message.setFrom(new InternetAddress(from));
