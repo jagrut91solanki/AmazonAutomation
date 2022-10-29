@@ -19,10 +19,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class monitoringMail {
-	// public static void sendMail(String mailServer, String from,String username,
-	// String password,String port, String[] to, String subject, String messageBody,
-	// String attachmentPath, String attachmentName) throws MessagingException,
-	// AddressException
+
 	public void sendMail(String mailServer, String from, String[] to, String subject, String messageBody,
 			String attachmentPath, String attachmentName) throws MessagingException, AddressException {
 		boolean debug = false;
@@ -50,7 +47,7 @@ public class monitoringMail {
 			Message message = new MimeMessage(session);
 
 			// X-Priority values are generally numbers like 1 (for highest priority), 3
-			// (normal) and 5 (lowest).
+			// (normal) and 5 (lowest)
 			
 			message.addHeader("X-Priority", "1");
 			message.setFrom(new InternetAddress(from));
