@@ -19,5 +19,6 @@ public class ReadJson {
 		uData.setEnviroment((String) jsonobj.get("enviroment"));
 		uData.setStageUrl((String) jsonobj.get("STAGE"));
 		uData.setProdUrl((String) jsonobj.get("PROD"));
+		
 	}
 }
